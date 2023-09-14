@@ -1,0 +1,327 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com), 2020-2022 moderncv maintainers (github.com/moderncv).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt, a4paper, sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle[left]{classic}                     % style options are 'casual' (default), 'classic', 'banking', 'oldstyle', and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+%\setlength{\footskip}{136.00005pt}                 % Depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
+\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risk...
+
+% font loading
+% for luatex and xetex, do not use inputenc and fontenc
+% See https://tex.stackexchange.com/a/496643
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math} 
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+% document language
+\usepackage[english]{babel}  % FIXME: using Spanish breaks moderncv
+
+
+% personal data
+%\name{Md Mijanur}{Rahman}
+\firstname{Mijanur}
+\familyname{Rahman}
+%\title{Curriculum Vitae}                               
+%\born{4 July 1776}      
+%\address{street and number}{postcode city}
+\address{Staffelweg 3}{91054 Erlangen}{Deutschland}
+\phone[mobile]{+49-15752474859}                  
+\email{md.rahman.ce@gmail.com}                              
+
+\social[linkedin]{mijanr}                       
+\social[github]{mijanr}         
+
+%\extrainfo{additional information}                 
+\photo[66pt][0pt]{Mijan.png}   %64pt default                    
+%\quote{}                                
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Berufserfahrung}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+\cventry{06/2023--Laufend}{Wissenschaftliche Hilfskraft}{Fraunhofer IIS}{Nürnberg, Deutschland}{}{
+\begin{itemize}
+    \item Verwenden von GANs zur Generierung synthetischer Zeitreihendaten zur Bewältigung von Datenknappheit und Klassenungleichgewicht.
+    \item Beurteilung des Einflusses von Verlustfunktionen und Netzwerkarchitekturen auf die Leistung von GANs.
+    \item Bewertung verschiedener Evaluierungstechniken zur Messung der Leistung von GANs.
+    \item Vergleich des vorgeschlagenen GANs mit herkömmlicher Datenvergrößerung und modernsten GAN-Techniken.
+\end{itemize}}
+\vspace{1em} % Add a one-line space
+
+\cventry{12/2022--05/2023}{Wissenschaftliche Hilfskraft (Masterarbeit)}{Fraunhofer IIS}{Nürnberg, Deutschland}{}{
+\begin{itemize}
+\item Entwickelte das AcRCGAN-Modell zur Generierung synthetischer Zeitreihendaten und führte einen neuartigen Ansatz zur Generierung von Zeitreihendaten ein.
+\item Führte die Datenvorbereitung durch und etablierte Basisliniengenauigkeiten unter Verwendung von zwei Deep-Learning-Modellen auf relevanten Zeitreihendatensätzen, um eine robuste Benchmarking sicherzustellen.
+\item Führte eine gründliche Leistungsbewertung von AcRCGAN im Vergleich zu anderen modernen GANs durch und bewertete seine Effektivität und Überlegenheit.
+\end{itemize}}
+
+\vspace{1em} % Add a one-line space
+
+\cventry{05/2021--05/2023}{Wissenschaftliche Hilfskraft}{Fraunhofer IIS, SCS}{Nürnberg, Deutschland}{}{
+\begin{itemize}
+\item Erfolgreiches Durchführen der Datenaufbereitung für Rohdatensätze, die von Kunden bereitgestellt wurden, um sicherzustellen, dass die Daten organisiert und zur Analyse bereit waren.
+\item Umwandlung komplexer Daten in handlungsorientierte Erkenntnisse mithilfe von Datenvisualisierungstechniken.
+\item Implementierung von Nachfrageprognosemodellen zur Steigerung der Rentabilität durch die Vorhersage der Nachfrage und die Optimierung des Bestandsmanagements.
+\item Durchführung umfassender Literaturrecherchen, um über die neuesten Fortschritte und bewährten Verfahren in der Nachfrageprognose informiert zu bleiben.
+\end{itemize}}
+
+
+%-----------------------------------------------------
+%	EDUCATION SECTION
+%-----------------------------------------------------
+\section{Bildungsabschlüsse}
+
+\cventry{10/2019--05/2023}{M.Sc. in Computational Engineering}{Friedrich-Alexander-Universität}{Erlangen-Nürnberg, Deutschland}{}{}
+
+\vspace{1em} % Einzeiliger Abstand hinzufügen
+
+\cventry{05/2012--12/2016}{B.Sc. in Petroleum and Mining Engineering}{Chittagong University of Engineering and Technology}{Chittagong, Bangladesch}{}{}
+
+%-----------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------
+
+\section{Kenntnisse}
+
+\cvitem{\textbf{Allgemeine Kenntnisse}}{%
+  \begin{minipage}[t]{.25\textwidth}
+    \begin{itemize}
+      \item Maschinelles Lernen 
+      \item Deep Learning 
+      %\item Mustererkennung
+      %\item Data Science
+      %\item Zeitreihenprognosen
+    \end{itemize}
+  \end{minipage}%
+  \begin{minipage}[t]{.25\textwidth}
+    \begin{itemize}
+      \item Datenvisualisierung
+      \item Datenbereinigung
+      %\item Statistische Analyse
+      %\item Zeitreihenanalyse
+    \end{itemize}
+  \end{minipage}%
+  \begin{minipage}[t]{.3\textwidth}
+    \begin{itemize}
+      %\item Algorithmen und Datenstrukturen 
+      %\item Natural Language Processing (NLP)
+      \item Agile Methoden
+      %\item VSCode 
+    \end{itemize}
+  \end{minipage}%
+}
+
+\vspace{0.5em} % Add a one-line space
+
+\cvitem{\textbf{Programmieren und Frameworks}}{%
+  \begin{minipage}[t]{.25\textwidth}
+    \begin{itemize}
+      \item Python
+      \item PyTorch
+      \item TensorFlow
+      \item Keras
+    \end{itemize}
+  \end{minipage}%
+  \begin{minipage}[t]{.25\textwidth}
+    \begin{itemize}
+      \item NumPy
+      \item Pandas
+      \item Matplotlib
+      \item Plotly
+    \end{itemize}
+  \end{minipage}%
+  \begin{minipage}[t]{.3\textwidth}
+    \begin{itemize}      
+      \item Scikit-Learn
+      \item Optuna
+      \item FastAPI 
+      %\item Hydra
+      %\item OpenCV
+      %\item Huggingface
+      \item C{++}
+    \end{itemize}
+  \end{minipage}%
+}
+
+\cvitem{\textbf{Big Data und Datenbanken}}{
+  \begin{itemize}
+    \item PySpark
+    \item SQL (PostgreSQL)
+    % Add more skills as needed
+  \end{itemize}
+}
+\vspace{0.5em} % Add a one-line space
+
+\cvitem{\textbf{MLOps und Cloud Computing}}{%
+  \begin{minipage}[t]{.25\textwidth}
+    \begin{itemize}
+      \item Docker
+      \item Git 
+      \item GitLab
+    \end{itemize}
+  \end{minipage}%
+  \begin{minipage}[t]{.25\textwidth}
+    \begin{itemize}
+      \item GitHub 
+      \item MLFlow
+      \item CI/CD pipelines
+    \end{itemize}
+  \end{minipage}%
+  \begin{minipage}[t]{.30\textwidth}
+    \begin{itemize}
+      \item AWS
+      %\item Azure
+      \item Google Colab
+      \item Streamlit
+      % Add more skills as needed
+    \end{itemize}
+  \end{minipage}%
+}
+
+\vspace{1em} % Add a one-line space
+
+\cvitem{\textbf{Soziale Kompetenzen}}{%
+  \begin{minipage}[t]{.25\textwidth}
+    \begin{itemize}
+      \item Zusammenarbeit
+      \item Problemlösung
+    \end{itemize}
+  \end{minipage}%
+  \begin{minipage}[t]{.25\textwidth}
+    \begin{itemize}
+      \item Kontinuierliches Lernen
+      \item Innovation
+    \end{itemize}
+  \end{minipage}%
+  \begin{minipage}[t]{.30\textwidth}
+    \begin{itemize}
+      \item Kommunikation
+      \item Anpassungsfähigkeit
+      % Fügen Sie bei Bedarf weitere Fähigkeiten hinzu
+    \end{itemize}
+  \end{minipage}%
+}
+
+\vspace{1em} % Add a one-line space
+
+\cvitem{\textbf{Sonstige Kenntnisse}}{%
+  \begin{minipage}[t]{.25\textwidth}
+    \begin{itemize}
+      \item Microsoft PowerBI
+      \item Microsoft Excel
+      %\item LaTeX
+    \end{itemize}
+  \end{minipage}%
+  \begin{minipage}[t]{.25\textwidth}
+    \begin{itemize}
+      %\item Jupyter Notebook
+      \item Linux (CLI)
+      \item Windows (WSL)
+    \end{itemize}
+  \end{minipage}%
+  \begin{minipage}[t]{.30\textwidth}
+    \begin{itemize}
+      \item MacOS
+      %\item MS Office
+      \item Confluence
+      % Add more skills as needed
+    \end{itemize}
+  \end{minipage}%
+}
+
+%\cvcomputer{\textbf{General Skills}}{Machine Learning, Deep Learning, Pattern Recognition, Data Visualization, Data Wrangling, Statistical Analysis, Data Structures and Algorithms, Natural Language Processing, Agile Methodologies}{\textbf{Languages and Frameworks}}{Python, PyTorch, TensorFlow, Keras, NumPy, Pandas, Matplotlib, Plotly, Scikit-Learn, Optuna, FastAPI, Huggingface}
+%\cvcomputer{\textbf{Big Data and Databases}}{PySpark, SQL (PostgreSQL)} {\textbf{MLOps and Cloud Computing}}{Docker, Git, GitHub, GitLab, MLFlow, CI/CD pipelines, AWS, Google Colab, Streamlit}
+%\cvcomputer{\textbf{Others}}{Microsoft PowerBI, Microsoft Excel, LaTeX, Jupyter Notebook, Linux (CLI), Windows (WSL), MacOS, MS Office}{}{}
+
+
+\section{Projekte und Seminare}
+
+\cventry{06/2021--09/2021}{"Projekttitel: Synthetische Geländeerzeugung mit generativen adversariellen Netzwerken (GANs): Übersetzung von Höhenkarten in Texturkarten unter Verwendung von pix2pix GAN."}{}{}{}{
+\begin{itemize}
+\item Betonte die entscheidende Rolle virtueller Geländen in Videospielen, Flugsimulationen und verwandten Bereichen.
+\item Verwendete pix2pix GAN für die Übersetzung von Höhenkarten in Texturkarten und bewertete seine Leistung in Geländedarstellungsanwendungen.
+\end{itemize}}
+
+\vspace{1em} % Add a one-line space
+
+\cventry{12/2021--03/2022}{Seminar zum Thema: "Intraoperative Bildgebung und maschinelles Lernen"}{}{}{}{
+\begin{itemize}
+\item Verdeutlichte die entscheidende Rolle des Böhler-Winkels bei der schnellen Entscheidungsfindung in der Orthopädie.
+\item Verwendete Deep-Learning-Techniken, um den Böhler-Winkel in Ellenbogen-Röntgenaufnahmen zu bestimmen und die diagnostischen Fähigkeiten zu erweitern.
+\end{itemize}}
+
+%-----------------------------------------------------
+%	Honours and Awards
+%-----------------------------------------------------
+\section{Auszeichnungen}
+\cventry{01/2023}{Der Tensor Tournament T3 (Wettbewerb für maschinelles Lernen (ML)}{Machine Learning and Data Analytics Lab, Friedrich-Alexander-Universität}{Erlangen}{Deutschland}{
+\begin{itemize}
+\item Bewältigte vielfältige ML-Herausforderungen, darunter Klassifikation, Regression und Computer Vision-Aufgaben.
+\item Belegte den dritten Platz unter 27 konkurrierenden Teams.
+\end{itemize}}
+
+
+%-----------------------------------------------------
+%	Languages
+%-----------------------------------------------------
+\section{Sprachkenntnisse}
+%\cvlanguage{language 1}{Skill level}{Comment}
+
+%\cvitem{}{\textbf{English} \hspace{10mm} C1 - Professional working fluency}
+%\cvitem{}{\textbf{German} \hspace{10mm}B1 - Intermediate}
+\cvlanguage{\textbf{Englisch}}{C1 - fließend}{}
+\cvlanguage{\textbf{Deutsch}}{B1 - gute kenntnisse in Wort und Schrift}{}
+
+
+%-----------------------------------------------------
+%	HOBBIES and INTERESTS SECTION
+%-----------------------------------------------------
+
+\section{Hobbys and Interessen}
+
+\cvitem{\textbf{Hobbys}}{
+ \begin{itemize}
+    \item Die Natur erkunden durch Wandern, Radfahren und das Erleben der großartigen Natur.
+    \item Schach spielen. 
+    \item Am Wochenende Fußball und Badminton spielen.
+    \item Traditionelle Gerichte kochen.
+\end{itemize}
+}
+\cvitem{\textbf{Interessen}}{
+ \begin{itemize}
+    \item Blogs über neuesten technischen Trends und künstlichen Intelligenz lesen.
+    \item Erkunden von Literatur, insbesondere Fiktion.
+    \item Anschauen von Filmen mit Vorliebe für Filme aus verschiedenen Ländern und Kulturen.
+\end{itemize}
+}
+\end{document}
